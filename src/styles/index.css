@@ -1,11 +1,104 @@
-/* 
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+  color: #888;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.todo-container {
+  width: 500px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
 
-*/
+h1 {
+  font-size: 70px;
+  color: #5a8baf;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+  background-color: #f3f3f3;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+input[type="text"]:focus {
+  border: 2px solid #2cd5ca;
+}
+
+.task-box {
+  margin-top: 20px;
+}
+
+.task {
+  background-color: #f3f3f3;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task:hover {
+  background-color: #e6e6e6;
+}
+
+.delete {
+  cursor: pointer;
+  font-size: 10px;
+  color: #aa716d;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.task:hover .delete {
+  opacity: 1;
+}
+
+.no-tasks {
+  font-size: 16px;
+  color: #747474;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.counter {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.counter span {
+  font-weight: bold;
+}
+
+h1,
+input,
+.task,
+.counter {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+}
